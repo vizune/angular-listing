@@ -1,12 +1,24 @@
 <div class="ListingDashboard">
-    <div class="ListingDashboard-item" *ngFor="let item in listing">
-        <a class="ListingDashboard-link" routerLink="/detail/id">
-            <div class="ListingDashboard-thumbnail">
-                <img src="" alt="Thumbnail for ..." />
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1>{{ title }}</h1>
             </div>
-            <div class="ListingDashboard-title"></div>
-            <div class="ListingDashboard-favourite">
+        </div>
+        <!-- *ngFor="let item in listing" -->
+        <div class="row">
+            <div class="col">
+                <div class="ListingDashboard-item">
+                    <a class="ListingDashboard-link" routerLink="/detail/id">
+                        <div class="ListingDashboard-thumbnail">
+                            <img src="" alt="Thumbnail for ..." />
+                        </div>
+                        <div class="ListingDashboard-title"></div>
+                        <div class="ListingDashboard-favourite">
+                        </div>
+                    </a>
+                </div>
             </div>
-        </a>
+        </div>
     </div>
 </div>

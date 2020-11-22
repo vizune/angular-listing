@@ -7,6 +7,7 @@ Angular (V11) Listing Component
 * Bootstrap for CSS grid system - https://getbootstrap.com
 * Moment.js for date formatting - https://momentjs.com
 * Feather icons - https://feathericons.com
+* Google Fonts - https://fonts.google.com/specimen/Sarabun
 
 ## Project requirements
 * First screen displays a list of movis using TMDB API. This list must contain the name and poster.
