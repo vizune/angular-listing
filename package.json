@@ -1,0 +1,22 @@
+{
+  "name": "angular-listing-component",
+  "version": "1.0.0",
+  "description": "Angular (V11) Listing Component",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vizune/angular-listing.git"
+  },
+  "keywords": [
+    "angular"
+  ],
+  "author": "Sasha Richardson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vizune/angular-listing/issues"
+  },
+  "homepage": "https://github.com/vizune/angular-listing#readme"
+}
