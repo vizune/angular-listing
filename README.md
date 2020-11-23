@@ -20,7 +20,7 @@ Angular (V11) Listing Component
 ## Requirements unfinished
 * Voter average displays as star icons
 * Add to favourite functionality. Please see code comments in favourite.add component for general idea for functions.
-* In a normal project, it is common practice to implement unit testing with additional time and budget set aside for this aspect. Due to time restrictions, my main focus was to present as much of the component functionality as possible. In previous Angular projects I have used Protractor, Mocha, Chai and Cucumber. If I had more time to work on this project I would use Jest as my personal preference.
+* In a normal project, it is common practice to implement unit testing with additional time and budget set aside for this aspect. Due to time restrictions, my main focus was to present as much of the component functionality as possible. In previous Angular projects I have used Protractor, Mocha, Chai and Cucumber. If I had more time to work on this project I would consider Jest as my personal preference. Although the default Angular app setup uses Karma so I would do more research into this to compare Jest/Karma then decide from there which one I would use for the project.
 
 ## Enhancements added
 Button on Listing Detail to go back to Listing Dashboard. This improves the UX flow when browsing through multiple movies.
