@@ -5,6 +5,11 @@
 @import "~bootstrap/scss/mixins/screen-reader";
 @import "~bootstrap/scss/utilities/screenreaders";
 
+// In a larger code base, I would have these split into separate folders following the ITCSS structure
+
+// Settings
+@import './assets/css/variables';
+
 // Base
 @import './assets/css/typography';
 
