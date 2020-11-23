@@ -22,7 +22,7 @@ Angular (V11) Listing Component
 * Add to favourite functionality. Please see code comments in favourite.add component for general idea for functions.
 
 ## Enhancements added
-Button on Listing Detail to go back to Listing Dashboard
+Button on Listing Detail to go back to Listing Dashboard. This improves the UX flow when browsing through multiple movies.
 
 ## Other potential enhancements
 * UI enhancements, component styling e.g. cards for listing items

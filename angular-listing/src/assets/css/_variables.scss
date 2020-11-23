@@ -1,3 +1,7 @@
+// Normally I would create a map for color variables when there are multiple colours to choose from
+// I learnt this pattern when working with Ionic
+// set a colour, its contrast (usually for text colour if the colour's a background), shade and tint
+
 $color-primary: #1E3A8E;
 $color-primary-contrast: #FFFFFF;
 $color-primary-shade: #040F2F;
