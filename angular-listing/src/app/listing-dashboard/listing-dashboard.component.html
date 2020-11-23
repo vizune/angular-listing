@@ -1,12 +1,30 @@
 <div class="ListingDashboard">
-    <div class="ListingDashboard-item" *ngFor="let item in listing">
-        <a class="ListingDashboard-link" routerLink="/detail/id">
-            <div class="ListingDashboard-thumbnail">
-                <img src="" alt="Thumbnail for ..." />
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1>{{ title }}</h1>
             </div>
-            <div class="ListingDashboard-title"></div>
-            <div class="ListingDashboard-favourite">
+        </div>
+        <div class="row" *ngFor="let item of listing">
+            <div class="col">
+                <div class="ListingDashboard-item">
+                    <a class="ListingDashboard-link" routerLink="/detail/{{ item.id }}">
+                        <div class="row">
+                            <div class="col col-md-3">
+                                <div class="ListingDashboard-thumbnail" *ngIf="item.poster_path && item.title">
+                                    <img src="{{ imageBasePath }}{{ item.poster_path }}" alt="Thumbnail for {{ item.title }}" />
+                                </div>
+                            </div>
+                            <div class="col col-md-7">
+                                <h3 class="ListingDashboard-title" *ngIf="item.title">{{ item.title }}</h3>
+                            </div>
+                            <div class="col col-md-2">
+                                <!-- Add favourite component -->
+                            </div>
+                        </div>
+                    </a>
+                </div>
             </div>
-        </a>
+        </div>
     </div>
 </div>
