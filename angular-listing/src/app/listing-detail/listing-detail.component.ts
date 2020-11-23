@@ -40,6 +40,9 @@ export class ListingDetailComponent implements OnInit {
             data.results.map((item: any) => {
                 if(item["id"] && item["id"] == this.detailId) {
                    this.detailData = item;
+
+                   // Converting release date into a Date data type
+                   // in order to use Date pipe for formatting
                    this.releaseDate = new Date(this.detailData.release_date);
                 }
             })
