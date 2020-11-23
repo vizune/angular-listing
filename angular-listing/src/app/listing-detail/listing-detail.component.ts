@@ -3,7 +3,6 @@ import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
 import { ListingService } from '../listing.service';
 
-
 @Component({
     selector: 'listing-detail',
     templateUrl: './listing-detail.component.html',
@@ -13,6 +12,7 @@ export class ListingDetailComponent implements OnInit {
     detailId: number = 0;
     detailData: any;
     imageBasePath: string = "//image.tmdb.org/t/p/w220_and_h330_face";
+    releaseDate: Date = new Date();
 
     constructor(
         private route: ActivatedRoute,
@@ -40,6 +40,7 @@ export class ListingDetailComponent implements OnInit {
             data.results.map((item: any) => {
                 if(item["id"] && item["id"] == this.detailId) {
                    this.detailData = item;
+                   this.releaseDate = new Date(this.detailData.release_date);
                 }
             })
         })  

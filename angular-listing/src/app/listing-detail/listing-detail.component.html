@@ -9,7 +9,7 @@
             </div>
             <div class="col col-md-6">
                 <h1 class="ListingDetail-title" *ngIf="detailData.title">{{ detailData.title }}</h1>
-                <p>Release date: {{ detailData.release_date }}</p>
+                <p>Release date: {{ detailData.release_date | date: 'd MMMM y' }}</p>
                 <div class="ListingDetail-rating" *ngIf="detailData.voter_average">
                     <p>{{ detailData.voter_average }}</p>
                 </div>
@@ -20,7 +20,9 @@
         </div>
         <div class="row" *ngIf="detailData.overview">
             <div class="col">
-                {{ detailData.overview }}
+                <div class="ListingDetail-description">
+                    {{ detailData.overview }}
+                </div>
             </div>
         </div>
     </div>
