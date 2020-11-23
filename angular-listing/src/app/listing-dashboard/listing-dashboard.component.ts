@@ -17,9 +17,7 @@ export class ListingDashboardComponent implements OnInit {
 
         // Retrieve data from the Listing Service
         this.listingService.sendRequest().subscribe((data: any)=>{
-            console.log(data);
             this.listing = data.results;
-            console.log(this.listing)
         })  
     }
 }
