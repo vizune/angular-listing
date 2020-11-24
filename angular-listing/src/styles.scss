@@ -8,10 +8,13 @@
 // In a larger code base, I would have these split into separate folders following the ITCSS structure
 
 // Settings
-@import './assets/css/variables';
+@import './assets/css/settings/variables';
 
 // Base
-@import './assets/css/typography';
+@import './assets/css/base/typography';
 
-// Global styling
-@import './assets/css/button';
+// Elements
+@import './assets/css/elements/button';
+
+// Components
+@import './assets/css/components/card';

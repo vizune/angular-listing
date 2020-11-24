@@ -5,24 +5,18 @@
                 <h1>{{ title }}</h1>
             </div>
         </div>
-        <div class="row" *ngFor="let item of listing">
+        <div class="row">
             <div class="col">
-                <div class="ListingDashboard-item">
-                    <a class="ListingDashboard-link" routerLink="/detail/{{ item.id }}">
-                        <div class="row">
-                            <div class="col col-md-3">
-                                <div class="ListingDashboard-thumbnail" *ngIf="item.poster_path && item.title">
-                                    <img src="{{ imageBasePath }}{{ item.poster_path }}" alt="Thumbnail for {{ item.title }}" />
-                                </div>
+                <div class="ListingDashboard-wrapper">
+                    <div class="ListingDashboard-item Card" *ngFor="let item of listing">
+                        <a class="ListingDashboard-link" routerLink="/detail/{{ item.id }}">
+                            <div class="ListingDashboard-thumbnail" *ngIf="item.poster_path && item.title">
+                                <img src="{{ imageBasePath }}{{ item.poster_path }}" alt="Thumbnail for {{ item.title }}" />
                             </div>
-                            <div class="col col-md-7">
-                                <h3 class="ListingDashboard-title" *ngIf="item.title">{{ item.title }}</h3>
-                            </div>
-                            <div class="col col-md-2">
-                                <!-- Add favourite component -->
-                            </div>
-                        </div>
-                    </a>
+                            <h3 class="ListingDashboard-title" *ngIf="item.title">{{ item.title }}</h3>
+                            <!-- Add favourite component -->
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>

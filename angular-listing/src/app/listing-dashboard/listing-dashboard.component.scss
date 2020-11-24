@@ -1,18 +1,37 @@
 .ListingDashboard {
-    &-item {
+    &-wrapper {
+        display: grid;
+        grid-gap: 1.5rem;
+        grid-template-columns: repeat(auto-fit, 250px);
+    }
 
+    &-item {
+        transition: transform .25s ease;
+        transform-origin: center;
+        will-change: transform;
+
+        &:hover {
+            transform: translateY(-.5rem) translateZ(0) scale(1.05);
+        }
     }
 
     &-link {
-
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+        height: 100%;
     }
 
     &-thumbnail {
-
+        width: 100%;
     }
 
     &-title {
-
+        text-align: center;
+        text-transform: uppercase;
+        margin: 0;
+        padding: .5rem;
+        flex-grow: 1;
     }
 
     &-favourite {
